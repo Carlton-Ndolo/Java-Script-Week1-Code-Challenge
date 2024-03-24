@@ -71,7 +71,7 @@ function TaxableIncome() {
     return GrossPay - (NSSF(GrossPay) + NHIF(GrossPay));
 }
 
-console.log("Taxable Income:", TaxableIncome());
+console.log( TaxableIncome());
 
 function NetSalary() {
     return TaxableIncome() - Paye(TaxableIncome());
