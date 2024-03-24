@@ -1,6 +1,7 @@
 
 function calculateGrade(mark) {
-    if (mark > 79) {
+    //if conditionals...
+    if (mark > 79 && mark <= 100) {
         return 'A';
     } else if (mark >= 60 && mark <= 79) {
         return 'B';
@@ -8,12 +9,16 @@ function calculateGrade(mark) {
         return 'C';
     } else if (mark >= 40 && mark <= 49) {
         return 'D';
-    } else {
+    } else if (mark >= 0 && mark < 40) {
         return 'E';
+    }else {
+        return 'not existent'
     }
-}
 
-    mark = 80;
+}
+ // applicable example
+    mark = 20;
     console.log(`The student's grade is:`, calculateGrade(mark));
+// As we can see the student's grade has to be within the range of 0-100 for our grading system to make sense
 
 
