@@ -1,3 +1,4 @@
+
 function calculateGrade(mark) {
     if (mark > 79) {
         return 'A';
@@ -12,6 +13,7 @@ function calculateGrade(mark) {
     }
 }
 
-const input = prompt("Enter student's mark (between 0 and 100):");
+    mark = 80;
+    console.log(`The student's grade is:`, calculateGrade(mark));
 
-console.log(100)
+
