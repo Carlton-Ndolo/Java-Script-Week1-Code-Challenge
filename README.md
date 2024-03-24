@@ -25,3 +25,25 @@ to run script for netsalarycalc
 node netsalarycalc.js
 
 ```
+A simple payroll calculator is provided by this JavaScript application. The net wage is calculated by taking the employee's gross pay as input and deducting various amounts for PAYE (Pay As You Earn), NSSF (National Social Security Fund), and NHIF (National Hospital Insurance Fund).
+
+Setting the employee's gross salary is the first step in the program. This figure shows the employee's whole earnings before any deductions.
+
+Based on the employee's taxable income, the `Paye()` function determines the PAYE tax. It applies matching tax rates to each tax bracket after dividing the income into separate ones.
+
+The NHIF deduction is calculated by the {NHIF()} function using the gross salary as a basis. Various deduction amounts are assigned based on predetermined income ranges.
+
+
+The NSSF contribution is calculated using the `NSSF()` function using the gross salary as a basis. It uses a set proportion of pensionable pay, with various rates according to income levels.
+
+
+The taxable income is determined by deducting the NSSF and NHIF deductions from the gross salary using the {TaxableIncome()} function. The income subject to PAYE tax is represented by this amount.
+
+
+Subtracting the PAYE tax from the taxable income is how the `NetSalary()` function finally determines the net salary. The amount an employee keeps after all deductions is known as their net salary.
+That is what we worked on in this project.
+
+
+
+
+
